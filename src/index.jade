@@ -1,0 +1,425 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title enterJS - Polymer & ES6 in action
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+
+    article
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Polymer & ES6 in action
+        pre
+          code.language-javascript &lt;link rel="import" href="/bower_components/polymer/polymer.html">
+            | &lt;dom-module id="my-element">
+            |   &lt;template>
+            |     &lt;p>I'm a DOM element. This is my local DOM!&lt;/p>
+            |   &lt;/template>
+            | &lt;/dom-module>
+            | &lt;script>
+            |   Polymer({
+            |     is: "my-element"
+            |   });
+            | &lt;/script>
+
+      section.intro
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h1 About me
+        h2 Lars Gersmann
+        h3 working at <a href="http://cm4all.com">Content Management AG</a>
+        h6 AngularJS, Node.js, Gulp, ES6, HTML5 / Less.js, Sass / Docker / Bleeding edge browser technologies
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 What is Polymer ?
+        ul
+          li a library for creating web components
+          li exposes declarative syntax
+          li provides a 
+            strike web components polyfill
+            span  API to create custom elements working 
+            strong with or without native web components browser support
+          li Databinding support
+          li Template expressions
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 WTF are web components ?
+        ul
+          li web components is a umbrella term 
+          li 
+            a(href="http://w3c.github.io/webcomponents/spec/custom/") Custom Elements
+          li 
+            a(href="http://w3c.github.io/webcomponents/spec/imports/") HTML Imports
+          li 
+            a(href="https://html.spec.whatwg.org/multipage/scripting.html#the-template-element") Templates
+          li 
+            a(href="http://w3c.github.io/webcomponents/spec/shadow/") Shadow DOM
+          li 
+            a(href="http://www.w3.org/TR/css-scoping-1/") CSS Scoping specification
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 a little bit of Polymer history
+        ul
+          li Goole I/O 2013 : Polymer first time introduced 
+            div
+              strong very alpha
+          li 2014 : Version 0.4 + Version 0.5 + material design components
+            div
+              strong kinda usable
+          li 2015 : Version 0.8 ...
+           strong Version 1.0
+           div
+             h2 Yippie - a stable release !!
+    
+      section.rain
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Polymer 1.0
+        ul
+          li 
+            h4 is a complete rewrite. Everything has changed.
+          li JS API
+          li Declaration syntax
+          li Styling
+          li Databinding
+          li Template syntax
+          li ...
+          li
+            h2 Everything.
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Polymer 1.0 features
+        ul
+          li much lighter runtime (
+            strike polyfill   
+            span  wrapper API)
+          li Speed (Templating, Databinding)
+          li workaround different browser behaviours
+          li proprietary but consistent component styling
+          li 
+            strong A stable API
+          li
+            h2 Attention : Cling together, swing together ! 
+            
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h1 What is ES6 ? 
+        ul
+          li
+            h3 ES6 is the evolutionary next step of Javascript
+          li
+            a(href="http://www.2ality.com/2014/09/es6-modules-final.html") Modules
+          li
+            span template strings
+          li
+            span new keywords (let, const, ...)
+          li
+            span new classes (Map, Promise, ...)
+          li
+            span Generators/Iterators
+          li
+            span arrow functions
+          li 
+            span syntactic sugar (rest, spread, computed properties)
+          li 
+            a(href="https://speakerdeck.com/lgersman/enterjs-2014-ecmascript-6-the-future-is-now") many more ...
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Why ES6 + Polymer ? 
+        ul
+          li 
+            strong shorter/readable/understandable/maintainable 
+            span source code
+          li 
+            strong better
+            span  tooling (Editing, Linting, Packaging)
+          li =>
+            strong less
+            span  error prone
+          li 
+            strong less 
+            span  network traffic
+          li 
+            strong faster 
+            span execution time
+          li build 
+            span libraries/apps
+            strong ready for the future.
+          li
+            h1 ES6 just rocks !
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h1 The dark side 
+        ul
+          li web component standards 
+            strong not yet fully supported in browsers
+          li 
+            strong only evergreen browsers supported 
+            span by web component polyfills
+          li ES6 is 
+            strike not
+            a(href="https://kangax.github.io/compat-table/es6/")  only partially supported today
+            span  (both browser and nodejs)
+          li requires polyfills to be loaded/executed 
+          li not all browser features are available by polyfills
+          li ES6 builds are 
+            em quite tricky and complex
+          li transpiled ES6 might run slower than to optimized ES5 code
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h1 the bright side 
+        ul
+          li 
+            h3 You can use web components and ES6 today !! 
+          li Polyfills upgrade browser capabilites
+          li ES6 to ES5 transpilation tools available
+          li Use JS Classes avaible in the future now
+          li Once upon ES6 & web components are established browser standards ... 
+            h3 Your code base is up to date without touching them ! 
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Tooling - what we want
+        ul
+          li build tool
+          li es6 to es5 transpiler
+          li linting
+          li testing
+          li watch/autobuild
+          li packaging
+          li deployment/compression/serve to browser
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h1 Tooling 
+        ul
+          li 
+            strong ES6 Transpiler
+            span  : transpile ES6 sources to ES5
+            span  (
+            a(href="http://babeljs.io/") Babel
+            span   or 
+            a(href="https://github.com/google/traceur-compiler") Traceur
+            span ) 
+          li 
+            strong ES6 Module packaging 
+            span  (
+            a(href="http://browserify.org/") Browserify
+            span ) 
+          li
+            strong Build tool 
+            span  (
+            a(href="http://gulpjs.com/") Gulp
+            span  or 
+            a(href="http://gruntjs.com/") Grunt
+            span ) 
+          li
+            strong Utilities 
+            span  (
+            a(href="https://github.com/caseywebdev/watchy") Watchy
+            span , 
+            a(href="http://eslint.org/") ESLint
+            span , 
+            a(href="https://github.com/juliemr/minijasminenode") Jasmine Testing Framework
+            span , 
+            a(href="http://expressjs.com/") Express
+            span ) 
+          li
+            h3 *ES6 + Polymer in action* dream team :
+            a(href="http://browserify.org/") Browserify
+            span ,  
+            a(href="http://babeljs.io/") Babel
+            span /
+            a(href="https://github.com/babel/babelify") Babelify
+            span ,  
+            a(href="https://github.com/caseywebdev/watchy") Watchy
+            span ,  
+            a(href="http://eslint.org/") ESLint
+            span ,  
+            a(href="https://github.com/juliemr/minijasminenode") Jasmine Testing Framework
+            span , 
+            a(href="http://expressjs.com/") Express
+            span  and 
+            a(href="http://gulpjs.com/") Gulp
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Build Dependencies
+        
+        ul
+          li use NPM/Bower to manage our tool/library dependencies
+          li depend on tools, not wrappers
+          li make development preparation as simple as possible: 
+            pre
+              code.language-javascript 
+                |npm install
+          li declare build targets within <code>package.xml</code>
+            pre
+              code.language-javascript 
+                |"scripts": {
+                |  "tdd": "node_modules/.bin/watchy -w . -i '/dist|dist/.*/' ...
+                |  "build": "node_modules/.bin/gulp test"
+                |},
+            pre
+              code.language-javascript 
+                |npm run tdd
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Fluent Build Workflow
+        
+        ul
+          li start build whenever a file changes
+          li 
+            span Build : 
+            span test/lint 
+            strong and 
+            span clean/prepare/compile/build/serve 
+            strong in parallel
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h1 ES6 to ES5 
+        
+        ul
+          li 
+            h3 require 
+            ul
+              li 
+                a(href="http://babeljs.io/") Babel 
+                span runtime (<code>browser-polyfill.js</code>)
+                div 
+                  em (obsolete in future ES6 compat. browsers) 
+              li 
+                a(href="http://webcomponents.org/polyfills/") web components shim 
+                span runtime (<code>webcomponents-lite.js</code>)
+                div 
+                  em (optional, Chrome doesnt need it anymore) 
+              li 
+                a(href="https://www.polymer-project.org") Polymer 
+                span runtime (<code>polymer.html</code>)
+          li 
+            h3 transform ES6
+            ul
+              li to ES5 syntax by using 
+                a(href="https://github.com/babel/babelify") Babel(ify)
+              li merge transpiled (cjs module) sources into self contained file using 
+                a(href="http://browserify.org/") Browserify
+                
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h1 Build script
+        h2 Use ES6 in Gulpfile !
+        h6 shorter/readable Gulp scripts
+        pre
+          code.language-javascript 
+            |  // Gulpfile.js
+            |require("babel/register")({ extensions: ['.es6'] });
+            |require('./tasks.es6');
+            |  // tasks.es6
+            |...
+            |gulp.task('clean', done=>del('dist', done));
+      
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Ex: Hello world 
+        h3 Basic Polymer control in ES6
+        ul
+          li lesscss 
+          li Polymer Usage 
+          li Polymer readonly Template references
+          li Polymer Scoped Styling
+          li ES6 <code>ready</code> handler
+
+      section
+          h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+          h2 Ex : Dynamic Hello 
+          h3 Dynamic Polymer control in ES6
+          ul
+            li Polymer <code>properties</code> 
+             ul
+               li attribute mapping 
+               li default values
+               li computed properties
+            li Polymer Templating caveats
+            li ES6 Template strings
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Ex : Hello events
+        h3 Events in Polymer
+        ul
+          li imported content using <code>&lt;content select=""></code>
+          li declarative vs 'listeners' event registration 
+          li advanced ES6 Templating
+                  
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Ex : Hello ES6 modules
+        h3 Behaviours in Polymer
+        ul
+          li ES6 module syntax / Polymer behaviours
+          li ES6 keywords <code>const</code>, <code>export</code> and <code>import</code> 
+          li <code>Polymer.dom</code> API usage 
+          li Polymer Theming (variables, global styles)
+          li Polymer property observer
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Ex : Hello Promise 
+        h3 ES6 Promise usage in Polymer
+        ul
+          li ES6 Promise
+          li <code>window.fetch()</code> - the new native <code>$.ajax()</code>
+          li ES6 arrow functions
+          li Polymer readonly properties
+          li Polymer DOM helper elements
+          li Polymer bidirectional databinding + Chrome console debugging (aka <code>$0.ascending=!$0.ascending</code>)
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h2 Ex : Testing
+        h3 Testing Polymer
+        ul
+          li ESLint
+          li ES6 Functional testing using Jasmine
+          li Polymer component testing using Polymer <code>web-component-tester</code>
+                                                                                
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h1 Questions ?
+
+      section
+        h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
+        h1 Fini
+        h2 Thank you !!
+        
+        p
+          h5 Slides at GitHub : 
+            a(href='https://github.com/lgersman/enterjs2015-polymer_es6') Sources
+            span , 
+            a(href='https://github.com/lgersman/enterjs2015-polymer_es6_demo') Demo project
+            
+        p
+          h5 Contact : 
+            a(href='mailto://lars.gersmann@gmail.com') lars.gersmann@gmail.com
+          h5 Blog : 
+            a(href='http://orangevolt.blogspot.com') orangevolt.blogspot.com
+            
+        p
+          h5 Github : 
+            a(href='https://github.com/lgersman') github.com/lgersman
+        
+        p
+          h6 Content Management AG : 
+            a(href='https://cm4all.com') www.cm4all.com
+
+    script(src='build/build.js')
