@@ -13,6 +13,7 @@
     "bespoke-scale": "^1.0.0",
     "bespoke-theme-cube": "^2.0.0",
     "bespoke-touch": "^1.0.0",
+    "bower": "^1.4.1",
     "debowerify": "^0.7.1",
     "del": "^1.1.1",
     "gh-pages": "^0.2.0",
@@ -35,8 +36,8 @@
     "node": ">=0.10.0"
   },
   "description": "slides for  [enterJS 2015 talk Polymer & ES6 in action](http://www.enterjs.de/abstracts#polymer)",
-  "scripts" : {
-    "serve" : "node_modules/.bin/gulp serve"
+  "scripts": {
+    "serve": "node_modules/.bin/gulp serve"
   },
   "keywords": [
     "enterjs",

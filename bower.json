@@ -1,7 +1,7 @@
 {
-  "name": "presentation-hello-world",
-  "version": "0.0.0",
+  "name": "enterjs2015-polymer_es6",
+  "version": "0.0.1",
   "dependencies": {
-    "prism": "gh-pages"
+    "prism": "~1.0.0"
   }
 }
