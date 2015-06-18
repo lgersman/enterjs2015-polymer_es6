@@ -1,3 +1,5 @@
+You can view this slides at http://lgersman.github.io/enterjs2015-polymer_es6/
+
 demo project to this slides can be found at https://github.com/lgersman/enterjs2015-polymer_es6_demo
 
 ## View slides locally
