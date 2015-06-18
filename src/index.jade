@@ -115,7 +115,7 @@ html
           li
             a(href="http://www.2ality.com/2014/09/es6-modules-final.html") Modules
           li
-            span template strings
+            span Template strings
           li
             span new keywords (let, const, ...)
           li
@@ -123,7 +123,7 @@ html
           li
             span Generators/Iterators
           li
-            span arrow functions
+            span Arrow functions
           li 
             span syntactic sugar (rest, spread, computed properties)
           li 
@@ -149,7 +149,7 @@ html
             strong faster 
             span execution time
           li build 
-            span libraries/apps
+            span libraries/apps 
             strong ready for the future.
           li
             h1 ES6 just rocks !
@@ -165,11 +165,11 @@ html
             span by web component polyfills
           li ES6 is 
             strike not
-            a(href="https://kangax.github.io/compat-table/es6/")  only partially supported today
-            span  (both browser and nodejs)
-          li requires polyfills to be loaded/executed 
+            a(href="https://kangax.github.io/compat-table/es6/") only partially supported today
+            span  (in both browser and nodejs)
+          li requires polyfills 
           li not all browser features are available by polyfills
-          li ES6 builds are 
+          li ES6 build configuration is 
             em quite tricky and complex
           li transpiled ES6 might run slower than to optimized ES5 code
 
@@ -181,7 +181,7 @@ html
             h3 You can use web components and ES6 today !! 
           li Polyfills upgrade browser capabilites
           li ES6 to ES5 transpilation tools available
-          li Use JS Classes avaible in the future now
+          li Use JS Classes available in the future now
           li Once upon ES6 & web components are established browser standards ... 
             h3 Your code base is up to date without touching them ! 
 
@@ -299,8 +299,8 @@ html
                 div 
                   em (obsolete in future ES6 compat. browsers) 
               li 
-                a(href="http://webcomponents.org/polyfills/") web components shim 
-                span runtime (<code>webcomponents-lite.js</code>)
+                a(href="http://webcomponents.org/polyfills/") web components polyfill  
+                span (<code>webcomponents-lite.js</code>)
                 div 
                   em (optional, Chrome doesnt need it anymore) 
               li 
@@ -326,7 +326,7 @@ html
             |require('./tasks.es6');
             |  // tasks.es6
             |...
-            |gulp.task('clean', done=>del('dist', done));
+            |gulp.task('clean', pfy(`rm -rf ${DIST}`));
       
       section
         h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
@@ -337,7 +337,7 @@ html
           li Polymer Usage 
           li Polymer readonly Template references
           li Polymer Scoped Styling
-          li ES6 <code>ready</code> handler
+          li Polymer <code>ready</code> handler as ES6 arrow function
 
       section
           h6 enterJS 2015 - Polymer & ES6 in action (hosted by Lars Gersmann)
@@ -380,8 +380,6 @@ html
           li ES6 Promise
           li <code>window.fetch()</code> - the new native <code>$.ajax()</code>
           li ES6 arrow functions
-          li Polymer readonly properties
-          li Polymer DOM helper elements
           li Polymer bidirectional databinding + Chrome console debugging (aka <code>$0.ascending=!$0.ascending</code>)
 
       section
